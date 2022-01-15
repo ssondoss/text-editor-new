@@ -1,0 +1,64 @@
+<!-- <div class="layout-column align-items-center mt-50">
+  <section class="layout-row align-items-center justify-content-between">
+    <label>Celsius: </label>
+    <input
+      type="number"
+      class="large"
+      data-test-id="celsius-input"
+      [(ngModel)]="celiValue"
+      (input)="celiToFer()"
+    />
+  </section>
+
+  <section class="layout-row align-items-center justify-content-between">
+    <label>Fahrenheit: </label>
+    <input
+      type="number"
+      class="large"
+      [(ngModel)]="ferValue"
+      (input)="FerToCeil()"
+      data-test-id="fahrenheit-input"
+    />
+  </section>
+</div> -->
+<!-- <div class="layout-column align-items-center">
+  <app-weather-c [weatherData]="weatherData"></app-weather-c>
+</div> -->
+<div class="p-5">
+  <div class="row mx-0">
+    <select
+      name=""
+      id=""
+      class="col-3 form-control form-control-lg"
+      (change)="selectFont($event.target)"
+    >
+      <option selected>Select Font</option>
+      <option value="1">The Nautigal</option>
+
+      <option value="2">Times New Roman</option>
+    </select>
+    <select
+      name=""
+      id=""
+      class="col-3 form-control form-control-lg"
+      (change)="selectColor($event.target)"
+    >
+      <option selected>Select color</option>
+      <option value="red">red</option>
+
+      <option value="blue">blue</option>
+    </select>
+    <button style="border: none" (click)="makeBold()" class="btn col-3 my-auto">
+      <fa-icon [icon]="faBold" class="text-dark fa-2x my-auto"></fa-icon>
+    </button>
+    <!-- <button (click)="makeBold()" class="">make bold</button> -->
+  </div>
+  <div
+    id="text"
+    contenteditable="true"
+    class="w-100 border p-2 rounded mt-5"
+    style="height: 400px"
+    type="input"
+  ></div>
+  <div class=""></div>
+</div>
